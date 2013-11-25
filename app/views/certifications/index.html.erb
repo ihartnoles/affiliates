@@ -1,11 +1,18 @@
 <h1>Listing certifications</h1>
 
 <table>
+
+   <tr>
+    <td colspan = "5">Download: <%= link_to "Excel", certifications_path(format: "xls") %></td>
+  </tr>
+
   <tr>
     <th>Specialty</th>
     <th>Year</th>
     <th colspan = "3">Actions</th>    
   </tr>
+
+ 
 
 <% @certifications.each do |certification| %>
   <tr>
